@@ -1,0 +1,17 @@
+[k8s-Academy-Masters]
+pablowilliams871c.mylabserver.com
+
+[k8s-Academy-Workers]
+pablowilliams872c.mylabserver.com
+pablowilliams873c.mylabserver.com
+
+[k8s-Academy:children]
+k8s-Academy-Masters
+k8s-Academy-Workers
+
+[k8s-Academy:vars]
+ansible_connection=ssh
+ansible_user=cloud_user
+ansible_password=35635687Pw!
+
+

@@ -1,0 +1,9 @@
+- name: Configure SSH No Passwd
+  hosts: k8s-Academy
+  become: yes
+  tasks:
+  - name: Set authorized keys
+    authorized_key:
+      user: root
+      state: present
+      key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
